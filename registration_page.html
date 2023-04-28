@@ -1,0 +1,26 @@
+<html>
+<head>
+	<title>Employee Registration</title>
+</head>
+<body>
+	<h1>This is Employee Registration Page</h1>
+<form method="POST" action="{{ url_for('registration') }}">
+  <label for="EMPID">Employee ID:</label>
+  <input type="text" id="EMPID" name="EMPID">
+  <br>
+  <label for="EMPName">Employee Name:</label>
+  <input type="text" id="EMPName" name="EMPName">
+  <br>
+  <label for="EMPGender">Gender:</label>
+  <input type="text" id="EMPGender" name="EMPGender">
+  <br>
+  <label for="EMPPhone">Phone Number:</label>
+  <input type="text" id="EMPPhone" name="EMPPhone">
+  <br>
+  <label for="EMPBdate">Birth Date:</label>
+  <input type="text" id="EMPBdate" name="EMPBdate">
+  <br>
+  <input type="submit" value="Submit">
+</form>
+</body>
+</html>
