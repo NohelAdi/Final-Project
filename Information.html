@@ -1,23 +1,52 @@
 <html>
-  <head>
-    <title>Student Information</title>
-  </head>
-  <body>
+<head>
+  <title>Student Information</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <style>
+    /* Custom CSS styles */
+    body {
+      padding: 20px;
+      font-family: Arial, sans-serif;
+    }
+
+    h1, h2 {
+      color: #333;
+    }
+
+    table {
+      margin-top: 20px;
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    th, td {
+      padding: 8px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    th {
+      background-color: #f2f2f2;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
     <h1>Student Information</h1>
     <h2>Personal Details</h2>
     <p>Name: John Doe</p>
     <p>Student ID: 12345</p>
-    <p>Email: john.doe@example.com</p>
+    <p>Email: john.doe@buffalo.edu</p>
     <p>Phone: 123-456-7890</p>
-   
+
     <h2>Academic Details</h2>
     <p>Major: Computer Science</p>
     <p>GPA: 3.8</p>
     <p>Expected Graduation Date: May 2025</p>
-   
+
     <h2>Course Schedule</h2>
-    <table>
-      <thead>
+    <table class="table">
+     <thead>
         <tr>
           <th>Course Code</th>
           <th>Course Title</th>
@@ -46,5 +75,6 @@
         </tr>
       </tbody>
     </table>
-  </body>
+  </div>
+</body>
 </html>
