@@ -47,7 +47,7 @@ def register():
 
         return redirect(url_for('Information'))
     
-    return render_template('registration.html')
+    return render_template('Registration.html')
 
 @app.route('/Information')
 def information():
@@ -60,7 +60,7 @@ def information():
 	cur = conn.cursor()
 	cur.execute("SELECT * FROM Students")
 	rows = cur.fetchall()
-	return render_template('Information.html', rows=rows)
+	return render_template('information.html', rows=rows)
 
 if __name__ == '__main__':
     app.run(debug=True)
