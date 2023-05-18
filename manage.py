@@ -45,11 +45,11 @@ def register():
         conn.commit()
         conn.close()
 
-        return redirect(url_for('information'))
+        return redirect(url_for('Information'))
     
     return render_template('registration.html')
 
-@app.route('/information')
+@app.route('/Information')
 def information():
 	conn = mysql.connector.connect(
 		host='localhost',
@@ -60,7 +60,7 @@ def information():
 	cur = conn.cursor()
 	cur.execute("SELECT * FROM Students")
 	rows = cur.fetchall()
-	return render_template('information.html', rows=rows)
+	return render_template('Information.html', rows=rows)
 
 if __name__ == '__main__':
     app.run(debug=True)
