@@ -27,7 +27,7 @@ conn.close()
 def home():
     return render_template('studenthomepage.html')
 
-@app.route('/register', methods=['GET', 'POST'])
+@app.route('/registration', methods=['GET', 'POST'])
 def register():
     if request.method == 'POST':
         StudentName = request.form['StudentName']
@@ -47,7 +47,7 @@ def register():
 
         return redirect(url_for('information'))
     
-    return render_template('register.html')
+    return render_template('registration.html')
 
 @app.route('/information')
 def information():
